@@ -1,0 +1,87 @@
+.main-page {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    /* background-color: #f0f0f0; */
+    padding: 20px;
+  }
+  
+  .hero-section {
+    /* background-color: #3c0765; */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button.primary {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .cta-button.secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .features {
+    margin-top: 40px;
+  }
+  
+  .feature-item {
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 1.75rem;
+    color: #007BFF;
+  }
+  
+  .feature-description {
+    font-size: 1.1rem;
+    color: #c1b7b7;
+  }
+  
+  .footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  .no-underline {
+    text-decoration: none; /* Removes the underline */
+    color: white; /* Ensures text remains visible */
+  }
+  
+  .no-underline:hover {
+    text-decoration: none; /* Prevents underline on hover */
+  }
+  
