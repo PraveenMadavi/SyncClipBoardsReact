@@ -28,20 +28,21 @@ const WelcomePage = () => {
         try {
             const response = await fetch("http://localhost:8080/session/set-user", {
                 method: "POST",
+                credentials: "include",
                 headers: { "Content-Type": "application/json" },
-                body:name
+                body:JSON.stringify({name})
             });
             // console.log(JSON.stringify({name}))
             console.log("Sending name: " + name)
             
             if (response.ok) {
-                navigate("/LinkerBoard"); // Navigate only after successful request
+                navigate("/syncpanel"); // Navigate only after successful request
             } else {
                 alert("Failed to send name. Please try again.");
             }
         } catch (error) {
             console.error("Error:", error);
-            alert("Something went wrong.");
+            alert("Something went wrong or server error > "+ error);
         }
     };
 

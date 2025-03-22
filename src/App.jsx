@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import MainPage from "./components/MainPage";
-import LinkerBourd from "./components/LinkerBourd";
 import Footer from "./components/Footer";
 import {BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import WelcomePage from "./components/WelcomePage";
+import SyncPanel from "./components/Syncpanel";
+import WorkPanel from "./components/WorkPanel";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
 
       <Router>
         <Routes>
-          <Route path="" element={<MainPage />} />
+          <Route path="/mainpage" element={<MainPage />} />
           <Route path="/welcomepage" element={<WelcomePage/>} />
-          <Route path="/linkerboard" element={<LinkerBourd/>} />
+          <Route path="/syncpanel" element={<SyncPanel/>} />
+          <Route path="/workpanel" element={<WorkPanel/>} />
         </Routes>
       </Router>
      

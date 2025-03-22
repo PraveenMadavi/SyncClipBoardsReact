@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <a href="/" className="navbar-logo">
+        <a href="/mainpage" className="navbar-logo">
           Link_it
         </a>
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Menu Items */}
         <ul className={`navbar-menu ${isOpen ? "active" : ""}`}>
           <li className="navbar-item">
-            <a href="/" className="navbar-link">
+            <a href="/mainpage" className="navbar-link">
               Home
             </a>
           </li>
